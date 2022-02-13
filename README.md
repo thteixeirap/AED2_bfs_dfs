@@ -72,6 +72,13 @@ Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentr
   }
 ```
 
+* Exemplo apresentado no código:
+
+A matriz já setada na opção de [Matriz de Adjacência ABS] do código tem a seguinte representação:
+
+<img src="https://user-images.githubusercontent.com/78819692/153753492-bf83450b-fdfc-4e8d-a2f7-36224f6e2b50.png" width="300">
+
+
  <h1></h1>
  
   #### Mudança no DFS (Matriz Adjacente)
