@@ -105,7 +105,7 @@ Para adptar a DFS para comportar a matriz adjacente mudamos o for dentro da fun�
 
 ```c
 void DFS_VISIT(Graph G,int v, int *cor, int *d, int *f, int *tempo){
-  cor[v]  = 1;
+  cor[v]  = 1; //Recebe cor Cinza
   *tempo  += 1;
   d[v]    = *tempo;
 
@@ -117,7 +117,7 @@ void DFS_VISIT(Graph G,int v, int *cor, int *d, int *f, int *tempo){
    if(G->Matriz[v][u] == 1 &&  cor[u] == 0) 
       DFS_VISIT(G, u, cor, d, f, tempo);
 
-  cor[v] = 2;
+  cor[v] = 2; //Após analisar todo meu vértice, recebe cor Preta
   *tempo += 1;
   f[v] = *tempo;
   printf("Vertex:%d D:%d, F:%d \n", v, d[v], f[v]);
