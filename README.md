@@ -141,7 +141,7 @@ Exemplo da saída da opção [Matriz de Adjacência DFS], sendo que o grafo util
  
  #### Mudança no BFS (Matriz de Incidencia)
  
- Igualmente quando mudamos o conteudo do while dentro do BSF para a matriz de adjancencia mudaremos ela para a matriz de incidencia. Ao contrário da Matriz de Adjacencia em que mudamos o for para que a partir do vértice visitado ele caminhasse na linha para encontrar uma aresta [Valor 1], na matriz de incidencia a partir do vértice pesquisado iremos caminhar sua linha ate encontrar uma aresta [Valor 1] e assim que encontrarmos iremos caminhar a coluna para encontrar a outra ponta desse vértice.
+ Igualmente quando mudamos o conteudo do while dentro do BSF para a matriz de adjancencia mudaremos ela para a matriz de incidencia. Ao contrário da Matriz de Adjacencia em que mudamos o for para que a partir do vértice visitado ele caminhasse na linha para encontrar uma aresta [Valor 1], na matriz de incidencia a partir do vértice pesquisado iremos caminhar sua linha ate encontrar uma aresta [Valor 1] e assim que encontrarmos iremos caminhar a coluna para encontrar a outra ponta desse vértice (ver em [#9](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/incidence.c#L68)).
  
  ```c
  while(isEmpty(&f) == 0){ // Enquanto tiver elemento na lista
