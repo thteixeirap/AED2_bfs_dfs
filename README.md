@@ -98,4 +98,4 @@ Comentando a analise primária, sendo que começamos a partir do vértice 0:
   
   * DFS com lista de adjacência:
   
-<img src="https://user-images.githubusercontent.com/78819692/153754361-557a5dca-52ec-496e-b9d3-f82bf26c441a.png" width="400">
+<img src="https://user-images.githubusercontent.com/78819692/153754361-557a5dca-52ec-496e-b9d3-f82bf26c441a.png" width="440">
