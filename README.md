@@ -85,7 +85,8 @@ A matriz já setada na opção de [Matriz de Adjacência ABS] do código tem a s
 
 Ao iniciar nosso código nessa opção teremos de inicio a representação da matriz adjacente e em seguida todo o acompanhamento realizado pelo BFS, incluindo os vertices que estão sendo analisados, quais dos vértices foram adicionados na fila e toda a mudança de cores desses vértices.
 
-![image](https://user-images.githubusercontent.com/78819692/153753658-020bf2d7-a2f4-4942-b07d-7601d40afc72.png)
+
+<img src="https://user-images.githubusercontent.com/78819692/153753658-020bf2d7-a2f4-4942-b07d-7601d40afc72.png" width="300">
 
 Comentando a analise primária, sendo que começamos a partir do vértice 0:
 
