@@ -173,3 +173,19 @@ Exemplo da saída da opção [Matriz de Adjacência DFS], sendo que o grafo util
      printf("\n\nVertice [%d] | recebe [Cor Preta = 2]  \n", vis);
   }
 ```
+
+Exemplo da saída da opção [Matriz de Incidência BFS]
+
+
+<img src="https://user-images.githubusercontent.com/78819692/153756841-c213484d-8b01-4bf5-b848-1d8c90dfafb4.png" width="320">
+
+
+
+
+
+
+
+
+<img src="https://user-images.githubusercontent.com/78819692/153756766-8de52ec4-4864-4d85-9f0a-7fa745d507e0.png" width="320">
+
+
