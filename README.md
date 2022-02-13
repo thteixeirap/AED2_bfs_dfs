@@ -71,4 +71,8 @@ Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentr
      printf("\n\nVertice [%d] | recebe [Cor Preta = 2]  \n", vis);
   }
 ```
+
+ <h1></h1>
  
+  #### Mudança no BFS (Matriz de Incidência)
+
