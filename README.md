@@ -196,3 +196,44 @@ Comentando a analise primária, sendo que começamos a partir do vértice 0:
 * 4 tem arestas (0,3,8) com os vértices 0,1,5. Como o vértice 0 é preto, apenas os vértices 1,5 são adicionados
 * o vértice 3 é desenfileirado da fila e analisado. Ele tem arestas (1,5,7) com os vértices (1,2,5). O vértice 0 é preto e 5 é cinza, portanto apenas o vértice 2 é adicionado a fila
 * Vértice 3 após ser todo investigado é atribuido a ele a cor preta
+
+
+
+ <h1></h1>
+
+  #### Mudança no DFS (Matriz de Incidencia)
+  
+  
+Para adptar a DFS para comportar a matriz de incidencia mudamos o for dentro da função `DFS-Visit`(Linha 4 do exemplo) para identificar o vértice no qual teremos aresta.
+
+
+```c
+void DFS_VISITInc(GraphInc G,int v, int *cor, int *d, int *f, int *tempo){
+  cor[v]  = 1;
+  *tempo  += 1;
+  d[v]    = *tempo;
+
+    for(int u = 0; u < Edge; u++){ // vou percorrer na linha da minha matriz
+        if(G->Matriz[v][u] == 1 &&  cor[u] == 0){
+            for(int j=0;j<MAXInc;j++){ // vou percorrer na linha da minha matriz     
+                if(G->Matriz[j][u] == 1 && cor[j] == 0){ //localizo vertices q contem arestas ligadas e não foi visitado
+                    DFS_VISITInc(G, j, cor, d, f, tempo);
+                }
+            }
+        }
+    }
+
+  cor[v] = 2;
+  *tempo += 1;
+  f[v] = *tempo;
+  printf("Vertex:%d D:%d, F:%d \n", v, d[v], f[v]);
+}
+
+```
+Exemplo da saída da opção [Matriz de Incidência DFS], sendo que o grafo utilizado é o mesmo utilizado quando chamamos a estrutura BFS
+
+<img src="https://user-images.githubusercontent.com/78819692/153767105-a4a34280-aa36-4139-ade1-1f5eeb875efd.png" width="320">
+
+ <h1></h1>
+  
+  
