@@ -74,5 +74,5 @@ Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentr
 
  <h1></h1>
  
-  #### Mudança no BFS (Matriz de Incidência)
+  #### Mudança no DFS (Matriz Adjacente)
 
