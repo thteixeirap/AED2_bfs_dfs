@@ -162,11 +162,14 @@ Exemplo da saída da opção [Matriz de Adjacência DFS], sendo que o grafo util
                  o vértice encontrado nao foi visitado entro no if
                 */
                 if(G->Matriz[j][i]==1 && G->visitados[j]==0 ){
-                     G->visitados[j] = 1;    
-                    Enfileira(&f,j);// Adiciono os vetores que tem ligações
+                     G->visitados[j] = 1; // Atribuo cor Cinza
+                    Enfileira(&f,j);// Adiciono o vertice na fila
                     printf(" Entrou, Enfilera [%d] na fila | Aresta: %d| recebe [Cor Cinza = 1]\n",j,i);
                     break;
                 }
             }
         }
+     G->visitados[vis] = 2; // Atribuo cor Preta apos analisar completamente o vértice
+     printf("\n\nVertice [%d] | recebe [Cor Preta = 2]  \n", vis);
+  }
 ```
