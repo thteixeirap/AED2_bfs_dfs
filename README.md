@@ -103,3 +103,23 @@ Comentando a analise primária, sendo que começamos a partir do vértice 0:
 Para adptar a DFS para comportar a matriz adjacente mudamos o for dentro da função `DFS-Visit`[#5](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/graph.c#L92) (Linha 4 do exemplo) para identificar o vértice no qual teremos aresta.
 
 
+```c
+void DFS_VISIT(Graph G,int v, int *cor, int *d, int *f, int *tempo){
+  cor[v]  = 1;
+  *tempo  += 1;
+  d[v]    = *tempo;
+
+/* vou percorrer na linha da minha matriz do vértice analisado*/
+ for(int u = 0; u < MAX; u++) 
+ 
+   /*Caso encontre uma aresta com algum outro vértice [Valor 1 na matriz] e 
+   esse vértice não foi visitado  */
+   if(G->Matriz[v][u] == 1 &&  cor[u] == 0) 
+      DFS_VISIT(G, u, cor, d, f, tempo);
+
+  cor[v] = 2;
+  *tempo += 1;
+  f[v] = *tempo;
+  printf("Vertex:%d D:%d, F:%d \n", v, d[v], f[v]);
+}
+```
