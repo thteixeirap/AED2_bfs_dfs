@@ -44,7 +44,7 @@
 
 Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentro do while (linha 10 do exemplo acima). 
 
-```
+```c
  while(isEmpty(&f) == 0){ // Enquanto tiver elemento na lista
   
     FImprime(&f);
