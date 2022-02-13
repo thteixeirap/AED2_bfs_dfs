@@ -57,7 +57,7 @@ Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentr
 
       printf("\n %d   %d",i,G->Matriz[vis][i]);
       
-      /* Se eu encontrar uma aresta, sendo q no vértice encontrado essa aresta 
+      /* Se eu encontrar uma aresta [Valor 1 na matriz], sendo q no vértice encontrado essa aresta 
        nao foi visitado, entro no if */
        
       if(G->visitados[i] ==  0 && (G->Matriz[vis][i] == 1)){ 
