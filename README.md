@@ -21,8 +21,6 @@
 - make
 - graph.exe
 
-<h1></h1>
-
 
 ## Adptação do Código
 
