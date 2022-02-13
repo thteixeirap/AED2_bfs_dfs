@@ -36,5 +36,5 @@
  
  [#3](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/graph.c#L25) -> Nossa inserção foi modificada para atribuir o valor de 1 para a posição da matriz em que os vértices fazem arestas.
  
- [#4]()
+ #### Mudança no BFS (Matriz Adjacente)
  
