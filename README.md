@@ -177,7 +177,7 @@ Exemplo da saída da opção [Matriz de Adjacência DFS], sendo que o grafo util
 Exemplo da saída da opção [Matriz de Incidência BFS]
 
 
-<img src="https://user-images.githubusercontent.com/78819692/153756841-c213484d-8b01-4bf5-b848-1d8c90dfafb4.png" width="320">
+<img src="https://user-images.githubusercontent.com/78819692/153756841-c213484d-8b01-4bf5-b848-1d8c90dfafb4.png" width="380">
 
 
 
