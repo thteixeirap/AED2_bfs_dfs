@@ -188,8 +188,6 @@ Após escolhermos essa opção, assim como o BFS da Adjacente, iremos acompanhar
 
 Comentando a analise primária, sendo que começamos a partir do vértice 0:
 
-Comentando a analise primária, sendo que começamos a partir do vértice 0:
-
 * No começo, iremos ter na fila apenas o vértice 0, que sera desenfileirado e analisado toda sua linha procurando uma aresta [valor 1]
 * Assim que achar uma aresta na sua linha ele irá procurar pela coluna a procura do outro par dessa aresta encontrada
 * O vértice 0 acha pares na aresta 0 e 1, em que será com os vértices 4 e 3, que será adicionado na fila e atribuído cor cinza
