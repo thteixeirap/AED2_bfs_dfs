@@ -42,7 +42,7 @@
  * BFS com lista de adjacência:
 <img src="https://user-images.githubusercontent.com/78819692/153752438-a4a01b83-13de-4625-88ee-04e9140cad7f.png" width="350">
 
-Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentro do while (linha 10 do exemplo acima). 
+Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentro do while [#4](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/graph.c#L60) (linha 10 do exemplo acima). 
 
 ```c
  while(isEmpty(&f) == 0){ // Enquanto tiver elemento na lista
@@ -95,3 +95,6 @@ Comentando a analise primária, sendo que começamos a partir do vértice 0:
  <h1></h1>
 
   #### Mudança no DFS (Matriz Adjacente)
+  
+  * DFS com lista de adjacência:
+  
