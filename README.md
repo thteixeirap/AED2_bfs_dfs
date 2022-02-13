@@ -74,7 +74,7 @@ Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentr
 
 * Exemplo apresentado no código:
 
-A matriz já setada na opção de [Matriz de Adjacência ABS] do código tem a seguinte representação:
+A matriz já setada na opção de [Matriz de Adjacência BFS] do código tem a seguinte representação:
 
 <img src="https://user-images.githubusercontent.com/78819692/153753492-bf83450b-fdfc-4e8d-a2f7-36224f6e2b50.png" width="300">
 
@@ -123,3 +123,6 @@ void DFS_VISIT(Graph G,int v, int *cor, int *d, int *f, int *tempo){
   printf("Vertex:%d D:%d, F:%d \n", v, d[v], f[v]);
 }
 ```
+Exemplo da saída da opção [Matriz de Adjacência DFS], sendo que o grafo utilizado é o mesmo utilizado quando chamamos a estrutura BFS
+
+<img src="https://user-images.githubusercontent.com/78819692/153754910-0fb12c80-c36b-4c99-bcd1-94683ccfd534.png" width="350">
