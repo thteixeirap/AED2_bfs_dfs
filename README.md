@@ -137,3 +137,36 @@ Exemplo da saída da opção [Matriz de Adjacência DFS], sendo que o grafo util
 
 [#8](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/incidence.c#L22) -> Na função de criar as arestas, a coluna da matriz (aresta) será fixa na variável de controle da aresta, e sempre que criamos uma adicionamos +1 nessa variável.
 
+ <h1></h1>
+ 
+ #### Mudança no BFS (Matriz de Incidencia)
+ 
+ Igualmente quando mudamos o conteudo do while dentro do BSF para a matriz de adjancencia mudaremos ela para a matriz de incidencia. Ao contrário da Matriz de Adjacencia em que mudamos o for para que a partir do vértice visitado ele caminhasse na linha para encontrar uma aresta [Valor 1], na matriz de incidencia a partir do vértice pesquisado iremos caminhar sua linha ate encontrar uma aresta [Valor 1] e assim que encontrarmos iremos caminhar a coluna para encontrar a outra ponta desse vértice.
+ 
+ ```c
+ while(isEmpty(&f) == 0){ // Enquanto tiver elemento na lista
+  
+    FImprime(&f);
+    vis = Desenfileira(&f); //Desinfilera a cabeça
+    printf("Visitado vetor [%d] | Desenfilera da Fila\n",vis); 
+    
+    for(int i=0; i<Edge;i++){  // Vou percorrer as linhas procurando um valor 1
+        
+        if(G->Matriz[vis][i] == 1){ // caso encontrado, entro no if
+            
+            
+            /*Percorro a coluna para procurar a outra ponta da aresta*/
+           
+           for(int j=0; j<MAXInc;j++){
+                /*Caso encontrar o valor 1 durande a busca pela coluna e 
+                 o vértice encontrado nao foi visitado entro no if
+                */
+                if(G->Matriz[j][i]==1 && G->visitados[j]==0 ){
+                     G->visitados[j] = 1;    
+                    Enfileira(&f,j);// Adiciono os vetores que tem ligações
+                    printf(" Entrou, Enfilera [%d] na fila | Aresta: %d| recebe [Cor Cinza = 1]\n",j,i);
+                    break;
+                }
+            }
+        }
+```
