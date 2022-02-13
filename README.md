@@ -2,7 +2,7 @@
  Trabalho AEDS|CEFET 
 </h1>
 <h4 align="center">	
-  Este trabalho consiste na implementação da estrutura da árvore vermelho-preto, bem como, sua comparação com as árvores binária e AVL.
+  Este trabalho consiste na implementação da estrutura BFS e DFS utilizando Matriz Adjacente e Matriz de Incidência
 </h4>
 <h1></h1>
 
