@@ -99,3 +99,7 @@ Comentando a analise primária, sendo que começamos a partir do vértice 0:
   * DFS com lista de adjacência:
   
 <img src="https://user-images.githubusercontent.com/78819692/153754361-557a5dca-52ec-496e-b9d3-f82bf26c441a.png" width="440">
+
+Para adptar a DFS para comportar a matriz adjacente mudamos o for dentro da função `DFS-Visit`[#5](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/graph.c#L92) (Linha 4 do exemplo) para identificar o vértice no qual teremos aresta.
+
+
