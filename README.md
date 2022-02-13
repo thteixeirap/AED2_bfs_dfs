@@ -38,6 +38,8 @@
  
  #### Mudança no BFS (Matriz Adjacente)
  
+ 
+ * BFS com lista de adjacência:
 <img src="https://user-images.githubusercontent.com/78819692/153752438-a4a01b83-13de-4625-88ee-04e9140cad7f.png" width="400">
 
 
