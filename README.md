@@ -180,6 +180,21 @@ A matriz já setada na opção de [Matriz de Incidência BFS] do código tem a s
 
 <img src="https://user-images.githubusercontent.com/78819692/153757029-89df2e17-0496-451a-ae58-af488ca24e3f.png" width="320">
 
+No grafo, as arestas também estão sendo identificadas (e0,e1,e2,...,e8)
+
+Após escolhermos essa opção, assim como o BFS da Adjacente, iremos acompanhar todo o processo realizada como saída do programa, desde o gráfico da matriz de incidência exibido como os vértices visitados, quais vértices foram adicionados a fila e todo o processo de mudança de cores.
+
 <img src="https://user-images.githubusercontent.com/78819692/153756841-c213484d-8b01-4bf5-b848-1d8c90dfafb4.png" width="380">
 
+Comentando a analise primária, sendo que começamos a partir do vértice 0:
 
+Comentando a analise primária, sendo que começamos a partir do vértice 0:
+
+* No começo, iremos ter na fila apenas o vértice 0, que sera desenfileirado e analisado toda sua linha procurando uma aresta [valor 1]
+* Assim que achar uma aresta na sua linha ele irá procurar pela coluna a procura do outro par dessa aresta encontrada
+* O vértice 0 acha pares na aresta 0 e 1, em que será com os vértices 4 e 3, que será adicionado na fila e atribuído cor cinza
+* Após verificar totalmente o vértice 0, o mesmo recebe cor preta
+* A cabeça da fila é desenfileirada e inicia uma analise a partir desse vértice, no caso, o 4 é desenfileirado e analisado
+* 4 tem arestas (0,3,8) com os vértices 0,1,5. Como o vértice 0 é preto, apenas os vértices 1,5 são adicionados
+* o vértice 3 é desenfileirado da fila e analisado. Ele tem arestas (1,5,7) com os vértices (1,2,5). O vértice 0 é preto e 5 é cinza, portanto apenas o vértice 2 é adicionado a fila
+* Vértice 3 após ser todo investigado é atribuido a ele a cor preta
