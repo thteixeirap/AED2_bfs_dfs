@@ -52,17 +52,22 @@ Para o nosso BFS comportar a matriz de adjacência tivemos uma mudança no dentr
     printf("Visitado vetor [%d] | Desenfilera da Fila\n",vis); 
     printf("\n V   E");
     
-    for(int i=0;i<MAX; i++){
+    // Percorro toda minha linha do vetor q estou visitando procurando aresta (1)
+    for(int i=0;i<MAX; i++){ 
 
       printf("\n %d   %d",i,G->Matriz[vis][i]);
-      if(G->visitados[i] ==  0 && (G->Matriz[vis][i] == 1)){          
-        G->visitados[i] = 1;    
-        Enfileira(&f,i);// Adiciono os vetores que tem ligações
+      
+      /* Se eu encontrar uma aresta, sendo q no vértice encontrado essa aresta 
+       nao foi visitado, entro no if */
+       
+      if(G->visitados[i] ==  0 && (G->Matriz[vis][i] == 1)){ 
+        G->visitados[i] = 1;   // Atribuo cor cinza 
+        Enfileira(&f,i);// Adiciono o vertice encontrado na fila
         printf(" Entrou, Enfilera [%d] na fila | recebe [Cor Cinza = 1]",i);
       }
 
     }
-     G->visitados[vis] = 2; 
+     G->visitados[vis] = 2; // terminei de analisar o vértice por completo, recebe cor preta
      printf("\n\nVertice [%d] | recebe [Cor Preta = 2]  \n", vis);
   }
 ```
