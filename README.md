@@ -22,3 +22,12 @@
 - graph.exe
 
 <h1></h1>
+
+
+## Adptação do Código
+
+<p> Partindo do código estudado em sala e disponibilizado no qual utilizamos uma fila de adjacência foram reaizadas modificações tanto nas estruturas do grafo quanto nas estruturas BFS e DFS para comportar as matrizes de adjacência e de incidência <p>
+ 
+### Grafo com Matrizes de Adjacência
+ 
+ <p> <p>
