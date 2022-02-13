@@ -87,7 +87,7 @@ Ao iniciar nosso código nessa opção teremos de inicio a representação da ma
 
 ![image](https://user-images.githubusercontent.com/78819692/153753658-020bf2d7-a2f4-4942-b07d-7601d40afc72.png)
 
-Analisando a analise primária, sendo que começamos a partir do vértice 0:
+Comentando a analise primária, sendo que começamos a partir do vértice 0:
 
 * No começo, iremos ter na fila apenas o vértice 0, que sera desenfileirado e analisado toda sua linha procurando uma aresta [valor 1]
 * Na coluna 1 e 2 iremos encontrar arestas, portanto 1 e 2 é adicionado na fila e recebem cor cinza
