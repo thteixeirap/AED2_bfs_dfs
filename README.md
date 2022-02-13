@@ -125,4 +125,4 @@ void DFS_VISIT(Graph G,int v, int *cor, int *d, int *f, int *tempo){
 ```
 Exemplo da saída da opção [Matriz de Adjacência DFS], sendo que o grafo utilizado é o mesmo utilizado quando chamamos a estrutura BFS
 
-<img src="https://user-images.githubusercontent.com/78819692/153754910-0fb12c80-c36b-4c99-bcd1-94683ccfd534.png" width="350">
+<img src="https://user-images.githubusercontent.com/78819692/153754910-0fb12c80-c36b-4c99-bcd1-94683ccfd534.png" width="320">
