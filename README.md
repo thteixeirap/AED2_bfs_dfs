@@ -126,3 +126,14 @@ void DFS_VISIT(Graph G,int v, int *cor, int *d, int *f, int *tempo){
 Exemplo da saída da opção [Matriz de Adjacência DFS], sendo que o grafo utilizado é o mesmo utilizado quando chamamos a estrutura BFS
 
 <img src="https://user-images.githubusercontent.com/78819692/153754910-0fb12c80-c36b-4c99-bcd1-94683ccfd534.png" width="320">
+
+ <h1></h1>
+
+### Grafo com Matrizes de Incidência
+
+[#6](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/incidence.h#L12) -> Mudanças no struct para poder criar uma matriz não quadrática
+ 
+[#7](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/incidence.c#L4) -> Criado uma variável para controlar o número de arestas criadas 
+
+[#8](https://github.com/thteixeirap/BSF-DSF/blob/main/graph/incidence.c#L22) -> Na função de criar as arestas, a coluna da matriz (aresta) será fixa na variável de controle da aresta, e sempre que criamos uma adicionamos +1 nessa variável.
+
